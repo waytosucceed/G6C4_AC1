@@ -1,0 +1,231 @@
+<html>
+    <head> <title>Class Activity 1</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        <link rel="icon" type="image/x-icon" href="Logo.png">
+        
+        <style>
+
+            #storydiv { 
+                height: 100%;
+                position: relative;         
+              }
+                      
+            #storydiv p {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+            
+            .maindiv{
+                border:5px ridge rgb(12, 96, 206);
+                margin:1%;
+                border-radius:20px
+            }
+
+            p{
+                font-size:30px;
+                font-weight: bold;
+            }
+
+           
+
+            #nextbtn, #backbtn, #newbtn{
+                width: 25%;
+                font-size:20px;
+                margin-right: 5%;
+                position: relative;
+                
+            }
+
+            #backbtn, #newbtn{
+                display:none;
+            }
+
+            #family{
+                width:95%;
+                height:95%;
+            }
+
+            #about{
+                font-weight: bold;
+                font-size:40px;
+                color:rgb(7, 7, 89)
+            }
+
+            #story{ 
+                font-size: 18px;
+                border-radius: 20px;
+            }
+
+            #imgdiv{
+                position:relative;
+            }
+         
+        
+        </style>
+</head>
+
+    <body> 
+        <div class="header" style="width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0); padding-bottom:10px;">
+            <img src="Logo.png" width="5%" style="float:left; margin-top:25px;" class="img-responsive">
+            <span> <img src="header.png" width="30%" height="100px" class="img-responsive"></span>
+        </div>
+         <br>
+        <br>
+        
+        <center>
+            <h2 id="about">Types of Nouns</h2>
+            <div class="maindiv container-fluid" style="height:60%;">
+            <center>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-11 imgdiv">
+                <img id="family" src="2.jpg" style="width:100%;"> 
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-11"  id='storydiv'>
+                <p id="story" style="text-align:left; width:100%; ">
+
+
+
+                    Let us recall “Nouns”. <br>
+                    From our previous knowledge we can say that: <span style="color: blue;"> Nouns are naming words.</span> All that <i style="color: #cb6ce6;"> exists</i> has a
+                    name and all that is <i style="color: #cb6ce6;"> discovered </i> and  <i style="color: #cb6ce6;">invented</i> is also given a name. <span style="color: blue;"> Nouns function to provide
+                    names to anything and everything <i> under the sun.</i></span> They are an important <u>part of speech </u>in all
+                    languages. They usually identify a person, a place, or a thing in particular. They also name things
+                    we cannot see or touch like happiness, sound, air, story etc. The endless list includes names of
+                    places, people, animals, things, concepts, qualities, organisations, communities, sensations, events
+                    etc. <br> <br>
+                    Few examples of nouns are given below: <br>
+                    People: <i> uncle, Henry, sister </i> <br>
+                    Place:  <i> Japan, garden, school </i><br>
+                    Things: <i> pen, television, bottle,</i>
+                 
+               
+                  
+                </p>     
+            </div>    
+        </center>
+        </div>
+        <br>
+        <div class="" style="text-align:center; padding-top:1%">
+            
+            <button id="backbtn" onclick="backpic()" class="btn btn-success">Back</button>
+            <button id="nextbtn" onclick="update()" class="btn btn-success">Continue</button>
+            <button id="newbtn" onclick="newpage()" class="btn btn-success">Next</button>
+            
+                
+        </div>
+    
+
+        </center>   
+
+        <script>
+
+            var images = ["Assets/1.jpg", "Assets/2.jpg", "Assets/3.jpg", "Assets/4.jpg", "Assets/5.jpg", "Assets/6.jpg", "Assets/7.jpg", "Assets/8.jpg", "Assets/9.jpg", "Assets/10.jpg", "Assets/11.jpg", "Assets/12.jpg", "Assets/13.jpg"];
+
+
+            var para=[
+                 
+                       "<span style='color: blue;'>The world is a vibrant place to live because we have various kinds of things around us, like the Sun, Moon, people, babies, the Dolphins, cutlery, etc. Thus in order to name different things there are different kinds of nouns and we will explore today.</span> <br> Let’s read this astonishing story of Maria Rossi and learn more about the kinds of nouns.",
+
+
+                       "In the beautiful town of Verona, Italy, Maria Rossi celebrated her 120th birthday surrounded by family and well-wishers. ‘Maria has become a symbol of longevity, resilience, and the joy of a well-lived life.", 
+
+                       " <img src='3A.jpg' style='width: 100%;' alt=''> ",
+
+                       "<img src='4A.jpg' style='width: 100%;' alt=''>",
+
+                       "<img src='5th.jpg' style='width: 100%;' alt=''>",
+
+
+                       " Born in 1904, Maria has witnessed the turn of the century, two world wars, and countless technological advancements. When asked about the secret to her long and healthy life, Maria chuckled and shared her simple philosophy: ‘A life filled with love, laughter and pasta!”.",
+
+                        "In the sentence below:<i style='color: blue;'> When asked about the secret to her long and healthy life, Maria chuckled and shared her simple philosophy: ‘A life filled with love, laughter and pasta!”.</i> 'Pasta' in the above sentence refers to a specific type of food which we can taste, see, touch and smell. ‘Pasta’ is a concrete noun. <span style='background-color: skyblue;'> Concrete noun  </span>refers to a physical object that can be perceived by one or more of the five senses (sight, hearing, touch, taste, smell).",
+
+                        "<img src='8th.jpg' style='width: 100%;' alt=''>",
+
+                       "Maria attributes her longevity to a diet rich in fresh vegetables, olive oil, a bunch of bananas, a basket of bread and homemade pasta - a staple in Italian cuisine. A glass of milk every day and plenty of water keeps Maria healthy, strong and confident.<br><br>The town of Verona came together to celebrate Maria's birthday, organising a grand party in her honour. Local officials presented her as a living treasure and an inspiration to generations.",
+        
+                       
+                        "<img src='10th.jpg' style='width: 100%;' alt=''>",
+
+
+                        "Maria reflected on her long and fulfilling life, saying, ‘Family is everything. The love we give and receive is what makes life truly meaningful. Her seven children and twenty-two grandchildren organised a touching tribute, compiling a scrapbook of memories, photos, and heartfelt messages from family members. Her family describes her as the glue that binds them together with her wisdom. As the world marvels at Maria's longevity, she remains a testament to the importance of love, laughter, and a bowl of hearty pasta in a life well-lived.",
+
+
+                        "<img src='12th.jpg' style='width: 100%;' alt=''>",
+
+                        "<img src='13th.jpg' style='width: 100%;' alt=''>",
+  
+
+                        "<img src='14th.jpg' style='width: 100%;' alt=''>",
+                      
+                    ] 
+            
+            
+            var i = -1;
+            function update(){
+                i++
+                document.getElementById("backbtn").style.display="inline-block"
+                if(i > para.length-1){
+                    document.getElementById("nextbtn").style.display="none"
+                    document.getElementById("newbtn").style.display="inline-block"
+                    document.getElementById("story").style.fontSize="22px"
+                    document.getElementById("about").innerHTML = "DICUSSION";
+                    document.getElementById("story").innerHTML = "<img src='discuss.jpg' style='width: 100%;' alt=''>";
+                    document.getElementById("family").src = "last.jpg";
+                    document.getElementById("family").src = "lastpart.jpg";
+                   
+
+                        
+                }
+                else{
+                    document.getElementById("story").style.fontSize="22px"
+                    document.getElementById("story").style.backgroundColor="white"
+                    document.getElementById("about").innerHTML="The Oldest Person"
+                     var updated_image = images[i]; 
+                var newpara =para[i];
+                document.getElementById("family").src = updated_image;
+                document.getElementById("story").innerHTML = newpara;
+              
+            }
+            };
+
+            function newpage(){
+                window.location="ac2.html"
+            }
+
+            function backpic(){
+                i=i-1
+                console.log(i)
+
+                if(i<0){
+                    document.getElementById("story").style.fontSize="18px"
+                    document.getElementById("backbtn").style.display="none"
+                    document.getElementById("nextbtn").style.display="inline-block"
+                    document.getElementById("family").src = "2.jpg";
+                    document.getElementById("about").innerHTML="Types of Nouns"
+                    document.getElementById("story").innerHTML = 'Let us recall “Nouns”. <br>  From our previous knowledge we can say that: <span style="color: blue;"> Nouns are naming words.</span> All that <i style="color: #cb6ce6;"> exists</i> has a  name and all that is <i style="color: #cb6ce6;"> discovered </i> and  <i style="color: #cb6ce6;">invented</i> is also given a name. <span style="color: blue;"> Nouns function to provide names to anything and everything <i> under the sun.</i></span> They are an important <u>part of speech </u>in all languages. They usually identify a person, a place, or a thing in particular. They also name things  we cannot see or touch like happiness, sound, air, story etc. The endless list includes names of places, people, animals, things, concepts, qualities, organisations, communities, sensations, events etc. <br> <br>Few examples of nouns are given below: <br>People: <i> uncle, Henry, sister </i> <br>Place:  <i> Japan, garden, school </i><br>Things: <i> pen, television, bottle,</i>';
+                }
+                else{
+                document.getElementById("story").style.fontSize="22px"
+                document.getElementById("story").style.backgroundColor="white"
+                document.getElementById("nextbtn").style.display="inline-block"
+                var updated_image = images[i]; 
+                var newpara =para[i];
+                document.getElementById("family").src = updated_image;
+                document.getElementById("story").innerHTML = newpara;
+                }
+            }
+
+    
+    </script>
+        
+    </body>
+</html>
